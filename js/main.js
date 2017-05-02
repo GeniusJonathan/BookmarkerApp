@@ -33,9 +33,11 @@ function saveBookmark(e){
             bookmarks.push(bookmark);
         }
                 
-        //Re-set back to localStorage
+        //Re-set back to localStorage 
         localStorage.setItem('bookmarks', JSON.stringify(bookmarks))  
-    }   
+    } 
+    //Clear form
+    document.getElementById('myForm').reset();  
     // Re-fetch bookmarks
     fetchBookmarks();
     // Prevent form from submitting
