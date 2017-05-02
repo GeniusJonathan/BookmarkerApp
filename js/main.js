@@ -100,7 +100,7 @@ function validateForm(siteName, siteUrl){
 function alreadyBookmarked(site, bookmarks){
     for(var i =0;i < bookmarks.length;i++){
         if(bookmarks[i].name == site){
-        // Remove from array
+        // Remove from bookmarks array
         return true;
         }
     }
