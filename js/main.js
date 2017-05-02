@@ -36,7 +36,7 @@ function saveBookmark(e){
         //Re-set back to localStorage 
         localStorage.setItem('bookmarks', JSON.stringify(bookmarks))  
     } 
-    //Clear form
+    //Clear form valuess
     document.getElementById('myForm').reset();  
     // Re-fetch bookmarks
     fetchBookmarks();
